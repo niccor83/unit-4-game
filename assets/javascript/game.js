@@ -62,12 +62,12 @@ $("#red-crystal").on("click", function(){
         crystalNum();
         redCrystNum = randomCrystNum;
         userGuess = userGuess + redCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         redClicked = true;
     }
     else if(redClicked === true){
         userGuess = userGuess + redCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         if(userGuess >= randomNum){
             winLoss();
         }   
@@ -80,12 +80,12 @@ $("#yellow-crystal").on("click", function () {
         crystalNum();
         yellowCrystNum = randomCrystNum;
         userGuess = userGuess + yellowCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         yellowClicked = true;
     }
     else if (yellowClicked === true) {
         userGuess = userGuess + yellowCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         if (userGuess >= randomNum) {
             winLoss();
         }
@@ -98,12 +98,12 @@ $("#blue-crystal").on("click", function () {
         crystalNum();
         blueCrystNum = randomCrystNum;
         userGuess = userGuess + blueCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         blueClicked = true;
     }
     else if (blueClicked === true) {
         userGuess = userGuess + blueCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         if (userGuess >= randomNum) {
             winLoss();
         }
@@ -116,12 +116,12 @@ $("#green-crystal").on("click", function () {
         crystalNum();
         greenCrystNum = randomCrystNum;
         userGuess = userGuess + greenCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         greenClicked = true;
     }
     else if (greenClicked === true) {
         userGuess = userGuess + greenCrystNum;
-        $("#guess-total").text(userGuess);
+        $("#guess-total").text("Total Score: " + userGuess);
         if (userGuess >= randomNum) {
             winLoss();
         }
