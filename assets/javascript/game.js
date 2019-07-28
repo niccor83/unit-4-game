@@ -29,6 +29,10 @@ function winLoss() {
     if(userGuess === randomNum){
         wins++;
         $("#wins").text("Wins: " + wins);
+        $("#instructions").html("<h1>You Win!</h1>");
+        setTimeout(function () {
+            $("#instructions").html('<h3>Game Instructions</h3>At the start of each game you will be given a random number.There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to the random number, you lose the game if your total score is more than the random number. The value of each crystal will be hidden until you click on it.Each time the game starts the value of each crystal will change.'); 
+        }, 3000);   
         userGuess = 0;
         $("#guess-total").text("Total Score: " + userGuess);
         $("#losses").text("Losses: " + losses);
@@ -38,10 +42,15 @@ function winLoss() {
         blueClicked = false;
         greenClicked = false;
 
+
     }//--Loss Scenario-- if userGuess > random number, increment losses, generate new random number
     else if(userGuess > randomNum){ 
         losses++;
         $("#losses").text("Losses: " + losses);
+        $("#instructions").html("<h1>You Lose!</h1>");
+        setTimeout(function () {
+            $("#instructions").html('<h3>Game Instructions</h3>At the start of each game you will be given a random number.There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to the random number, you lose the game if your total score is more than the random number. The value of each crystal will be hidden until you click on it.Each time the game starts the value of each crystal will change.');
+        }, 3000);
         userGuess = 0;
         $("#guess-total").text("Total Score: " + userGuess);
         numGenerator();
